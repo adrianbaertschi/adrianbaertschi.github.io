@@ -1,3 +1,7 @@
+---
+title: Setup IntelliJ IDEA LightEdit mode in Windows 10
+---
+
 # Setup IntelliJ IDEA LightEdit mode in Windows 10
 In the IntelliJ IDEA update 2020.1 [LightEdit mode was inroduced](https://blog.jetbrains.com/idea/2020/04/lightedit-mode/).
 To set it up on Windows 10 with Jetbrains Toolbox app 
