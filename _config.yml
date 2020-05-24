@@ -1,1 +1,6 @@
-theme: jekyll-theme-cayman
+theme: minima
+
+# See https://github.com/jekyll/minima/blob/2.5-stable/_config.yml
+github_username: adrianbaertschi
+linkedin_username: abaertschi
+
