@@ -21,7 +21,7 @@ For example: `console.log("Hello Deno");` and run it with `deno helloWorld.ts` w
 
 # Make a HTTP Request
 The following program reads the first argument which is passed in, makes a request to the url, reads the response and prints it to the console.
-```JavaScript
+```javascript
 const url = Deno.args[0];
 const res = await fetch(url);
 const body = new Uint8Array(await res.arrayBuffer());
@@ -33,7 +33,7 @@ Run it with `deno run --allow-net=www.google.com first_steps.ts https://www.goog
 
 # Reading a file
 Example to read a number of files and print the contents to the console:
-```JavaScript
+```javascript
 const filenames = Deno.args;
 for (const filename of filenames) {
   const file = await Deno.open(filename);
@@ -48,7 +48,7 @@ See more examples in the [Deno Manual](https://deno.land/manual/examples)
 # Standard modules
 See <https://deno.land/std> for a list of standard modules and how to use them.
 This example imports the uuid libary.
-```JavaScript
+```javascript
 import { v4 } from "https://deno.land/std/uuid/mod.ts";
 const myUUID = v4.generate();
 const isValid = v4.validate(myUUID);
@@ -60,7 +60,7 @@ Dependencies and other files are cached in C:\Users\<user>\\AppData\Local\deno (
 
 # Using third party libaries
 In addition there is a growing directory of [third party modules](https://deno.land/x). that can be used by referencing by url:
-```JavaScript
+```javascript
 import { camelCase } from "https://deno.land/x/case/mod.ts";
 const camel = camelCase("hello world")
 console.log(camel)
