@@ -1,3 +1,6 @@
 - Ktor (https://ktor.io/)
 - Go
 - Rust
+- bazel
+- Writing a Gradle plugin
+- https://github.com/diffplug/spotless
