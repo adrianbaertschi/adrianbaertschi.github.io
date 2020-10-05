@@ -1,12 +1,9 @@
 ---
 title: Storytelling with data - part 1
 ---
-
-TODO: split
-
 # Chapter 1: The importance of context
 
-- Exploratory: What you do to undertand the data
+- Exploratory: What you do to understand the data
 - Explanatory: Selected knowledge with purpose
 - Use explanatory for presenting
 
@@ -86,5 +83,5 @@ One number that stays with the audience
 
 
 TODO: sources
-Knaflic, Cole. Storytelling With Data: A Data Visualization Guide for Business Professionals, Wiley, © 2015.
+Knaflic, Cole. Storytelling With Data: A Data Visualization Guide for Business Professionals, Wiley 2015.
 
