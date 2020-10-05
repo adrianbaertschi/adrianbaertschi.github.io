@@ -5,3 +5,13 @@ encoding: UTF-8
 github_username: adrianbaertschi
 linkedin_username: abaertschi
 
+include:
+  - _pages
+
+exclude:
+  - .gitignore
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
