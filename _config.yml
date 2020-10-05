@@ -1,9 +1,19 @@
 theme: minima
-encoding: UTF-8
 
 # See https://github.com/jekyll/minima/blob/2.5-stable/_config.yml
 github_username: adrianbaertschi
 linkedin_username: abaertschi
+
+show_excerpts: true
+
+minima:
+  date_format: "%Y-%m-%d"
+
+# Minima: custom header links
+header_pages:
+  - _pages/frontpage.md
+  - _pages/about.md
+  - _pages/archive.md
 
 include:
   - _pages
