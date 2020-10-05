@@ -1,4 +1,6 @@
-
+---
+title: Storytelling with data - part 2
+---
 # Declutter
 Goal: Minimize perceived cognitive load
 Cognitive load: "How hard do I have to think to understand it"
