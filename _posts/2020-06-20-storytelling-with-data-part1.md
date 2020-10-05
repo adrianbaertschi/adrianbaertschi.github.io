@@ -1,6 +1,10 @@
 ---
 title: Storytelling with data - part 1
 ---
+Notes I made while reading 
+[Storytelling with data: a data visualization guide for business professionals](http://www.storytellingwithdata.com/books)
+from Cole Nussbaumer Knaflic.
+
 # Chapter 1: The importance of context
 
 - Exploratory: What you do to understand the data
@@ -47,7 +51,7 @@ One number that stays with the audience
 - Interact with visual system => processed faster
 
 ### Scatterplot
-- Shows Datapoints on two axes
+- Shows datapoints on two axes
 - Shows relationships of two things
 - Discover trends and similarities
 - Take time to explain to audience
@@ -81,7 +85,13 @@ One number that stays with the audience
 
 ![Area charts](/assets/storytelling_with_data/areagraph.png)
 
+### Graphs to avoid
+- Everything with angles and round shapes (Pie charts, donut charts etc.).
+Reason: Humans are not good at estimating round areas and distances.
 
-TODO: sources
-Knaflic, Cole. Storytelling With Data: A Data Visualization Guide for Business Professionals, Wiley 2015.
+- Graphs that are too complicated (Area charts, Bubble charts etc.).
+Too much information in one chart. This leads to a lot of effort of you explaining the 
+graph instead of explaining your idea.
 
+Image sources:
+Knaflic, Cole. Storytelling With Data: A Data Visualization Guide for Business Professionals, Wiley, © 2015.
