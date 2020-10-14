@@ -3,4 +3,5 @@
 - Rust
 - bazel
 - Writing a Gradle plugin
+  - Calisthenics verifier
 - https://github.com/diffplug/spotless
