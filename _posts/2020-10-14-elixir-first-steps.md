@@ -1,18 +1,20 @@
 ---
-title: First steps with elixir
+title: First steps with Elixir
 ---
 
-After I went throught the [elixir getting-started guide](https://elixir-lang.org/getting-started/introduction.html)
+After I went throught the [Getting-started guide](https://elixir-lang.org/getting-started/introduction.html)
 I finally managed to finish the official [Introduction to Mix](https://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html)
-tutorial from the elixir website.
+tutorial from the Elixir website. The guide covers buidling a distributed key-value store from scratch. Split in small steps the tutorial introduces the core concepts of the language and ecosystem.
 
-- Tools used
-  - IntelliJ IDEA with plugin
-  - Support for umbrella projects?
-- experience
-  - Syntax is hard
-  - lot of framework (Genserver, Tasks, Supervisor, etc, etc.)
-  - all-inclusive (build-tool, lang+framework)
-  - Autocomplete missing
-  - Parameter info would be helpful
-  - Good testing support
+- The good stuff
+  - Iterative style of the tutorial
+  - Elixir as a all-inclusive ecosystem (build-tool, lang+framework)
+  - Excellend testing support
+
+- Challenges
+  - Syntax was hard and felt very unfamiliar to me
+  - Lot of framework, concepts (Genserver, Tasks, Supervisor, etc.)
+  - IDE support is ok but some features are missing (better autocomplete, parameter info).
+  I used IntellJ with elixir plugin.
+
+[Repo with my code and instructions to run the app](https://github.com/adrianbaertschi/elixir-kv)
