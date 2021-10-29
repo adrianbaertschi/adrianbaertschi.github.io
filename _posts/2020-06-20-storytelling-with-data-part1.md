@@ -37,7 +37,7 @@ One number that stays with the audience
 
 ### Tables
 - Audience reads values from left to right
-- Design should fade in the background, avoid fancy Excel formattings
+- Design should fade in the background, avoid fancy Excel formatting
 
 ![Table formatting](/assets/storytelling_with_data/tables.png)
 
