@@ -9,8 +9,17 @@ the web frontend world through Angular and React, but not enough to be confident
 brush up my skills by starting a small pet project. In the past I played around with this really cool project
 called [Gource](https://gource.io/), a tool that generates an animated tree of a source control repository. The idea was
 born to re-create something similar for browser. Gource is [Open Source](https://github.com/acaudwell/Gource/) and
-written mostly in C++. The code is not that easy to read and my C++ skills are pretty much non-existent, so I don't
-expect it to be simple translation.
+written mostly in C++.
+
+Example repo visualisation by Gource:
+
+![Gource example](https://thumbs.gfycat.com/EuphoricConfusedBrahmancow-size_restricted.gif)
+
+In general, I imagined my app will have three parts:
+
+- Interacting with a Git repository (clone it, read the history)
+- Drawing a tree / graph of the directories and files
+- Animating the graph with changes from the Git commits
 
 # Walking through the Git history
 
@@ -59,8 +68,10 @@ To have this information I needed to walk through the git history and compare ea
 result should be which files are affected by the commit and how (add/modify/delete). Luckily there
 is [this snippet](https://isomorphic-git.org/docs/en/snippets#git-diff-name-status-commithash1-commithash2)
 which I used as the base for my implementation. It utilises the [walk command](https://isomorphic-git.org/docs/en/walk)
-of isomorphic-git. This idea originally comes from a project that had the same idea as me :-) and looks pretty nice:
+of isomorphic-git. This idea originally comes from a project that had the same idea as me :-):
 [https://github.com/kpj/GitViz](https://github.com/kpj/GitViz)
+
+# Making it testable
 
 To make the future development easier, I started to add simple test cases using [Jest](https://jestjs.io/) for the
 conversion logic. The tests clone a demo repo and verify that the commits and file information are evaluated in the
@@ -99,7 +110,7 @@ test('mars-rover repo first commit lists files', async () => {
 
 At this stage the git implementation was still written for Node.js only, so I needed to change it to be executable in
 the browser by switching the filesystem from Nodes `fs`
-to [lightning-fs](https://github.com/isomorphic-git/lightning-fs). In addition, the http lib needs to be changed
+to [lightning-fs](https://github.com/isomorphic-git/lightning-fs). In addition, the http library needs to be changed
 from `isomorphic-git/http/node` to `isomorphic-git/http/web`. To keep the code testable I keep `http` and `fs` as
 dependencies of my git module, then inject the node version for the tests and the browser versions for the real app.
 
@@ -135,7 +146,7 @@ export type FileOperation = 'ADD' | 'REMOVE' | 'MODIFY'
 One tricky parts of the git conversions turn out to be file and directory renaming, which are modelled as two operations
 (first remove old, then add new file).
 
-# Next step
+# Up next
 
 With this I felt I have all the data needed to start building the visualisation check
-out [part 2](2021-10-29-git-history-visualizer-part2.md).
+out [part 2](2021-12-29-git-history-visualizer-part2.md).
