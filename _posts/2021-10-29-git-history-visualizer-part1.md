@@ -149,4 +149,4 @@ One tricky parts of the git conversions turn out to be file and directory renami
 # Up next
 
 With this I felt I have all the data needed to start building the visualisation check
-out [part 2](2021-12-29-git-history-visualizer-part2.md).
+out [part 2]({% post_url 2021-12-29-git-history-visualizer-part2 %}).
